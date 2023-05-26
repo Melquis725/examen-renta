@@ -1,4 +1,4 @@
-import {db} from '/firebase';
+import {db} from './firebase';
 
 import { collection, query, getDocs} from 'firebase/firestore';
 
@@ -42,6 +42,4 @@ contCasas.innerHTML += `
     </div>
 
 `
-  
-
 });

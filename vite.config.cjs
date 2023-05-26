@@ -10,7 +10,7 @@ export default defineConfig({
     base: env.mode === "production" ? "/examen-renta/" : "/",
     build: {
         outDir: "docs",
-        assetsDir: "assets",
+        assetsDir: "assnext",
         rollupOptions: {
             input: {
                 main: resolve(__dirname, 'index.html')
