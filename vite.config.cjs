@@ -3,11 +3,11 @@ const { resolve } = require('path')
 
 const env = process.env;
 
-console.log('Environment: ', env.mode);
+env.mode = env.mode || "production";
 
 export default defineConfig({
     root: "./",
-    base: env.mode === "production" ? "/app/" : "/",
+    base: env.mode === "production" ? "/examen-renta/" : "/",
     build: {
         outDir: "docs",
         assetsDir: "assets",
